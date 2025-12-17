@@ -1,0 +1,92 @@
+*{
+    font-family: "Stack Sans Text", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.steam-game img
+{
+    width: 200px;
+    height: auto;
+}
+
+header
+{
+    color: white;
+    background-color: rgb(60, 60, 110);
+    padding: 50px;
+    text-align: center;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(46, 46, 83);
+}
+
+footer
+{
+    color: white;
+    background-color: rgb(60, 60, 110);
+    text-align: center;
+    height: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 95%;
+    padding: 50px;
+}
+
+.steam-game
+{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    header
+    {
+        color: white;
+        background-color: grey;
+        height: 100px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    main
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        background-color: rgb(143, 143, 143);
+    }
+
+    footer
+    {
+        color: white;
+        background-color: rgb(113, 113, 113);
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        width: 90%;
+        padding: 30px;
+    }   
+    
+    .steam-game
+    {
+        font-weight: 800;
+        text-overflow: ellipsis;
+    }
+
+    .steam-game img
+    {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+
